@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>nmf-wasi</title>
+        <!-- /design/DAGV39LEROY/zY1tF8JriGA2SeSiCtuPfQ/edit -->
+        <!-- google fonts cdn -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+            rel="stylesheet" />
+        <!-- color code -->
+        <!-- 6ee7b7 -->
+        <!-- font awesome cdn -->
+        <script
+            src="https://kit.fontawesome.com/2eb402e513.js"
+            crossorigin="anonymous">
+        </script>
+        <!-- Css stylesheet -->
+        <link
+            rel="stylesheet"
+            href="style.css" />
+        <!-- tailwind cdn -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        },
+                    },
+                },
+            };
+        </script>
+        <!-- daisy ui cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    </head>
+    <body>
+        <header>
+            <!-- hero page -->
+            <div
+                class="hero min-h-screen"
+                style="background-image: url(./Images/hero-bg.png)">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero_content md:flex justify-between">
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="">
+                            <h1
+                                class="mb-4 text-left text-6xl md:text-8xl lg:text-9xl font-bold text-stone-100 hi">
+                                Hi,
+                            </h1>
+                            <p
+                                class="font-Caveat mb-4 text-center md:text-right text-4xl md:text- lg:text-8xl name text-emerald-300">
+                                I am Fairuz!
+                            </p>
+                            <button
+                                class="btn-wide custom_btn"
+                                id="scrollButton">
+                                <span class="text mr-3">Continue</span>
+                                <span class="icon"
+                                    ><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff"></i
+                                ></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="me">
+                        <img
+                            src="./Images/Wasi.png"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>           
+            <section id="targetSection">
+                <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./Images/wasi2.png" alt="">
+                        <div>
+                        <div class="aboutMe flex">
+                            <h1 class="text-6xl font-bold">About Me!</h1>
+                            <progress class="progress progress-error w-56 grow mt-8" value="1000" max="100"></progress>
+                        </div>
+                        <p class="py-6 text-3xl md::text-2-xl">
+                            I am a passionate and motivated individual with a deep interest in programming languages and data structures. Currently, I am advancing my skills in problem solving, and I’m also actively learning Python. My enthusiasm for coding extends to participating in competitions, where I am at intermediate level but eager to grow.
+                        </p>
+                        <button class="relative px-6 py-3 bg-[#FF5861] text-white text-lg font-semibold rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 focus:outline-none group">
+                            <span class="absolute inset-0 rounded-lg bg-[#FF5861] blur-xl opacity-0 group-hover:opacity-100 transition duration-300"></span>
+                            <span class="relative">Hire Me</span>
+                        </button>                      
+                        <button class="btn px-6 py-3 border-[#FF5861] text-[#FF5861] hover:border-[#191E24] hover:bg-[#FF5861] hover:text-[#191E24] ">Download CV</button>
+
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="flex justify-center bg-base-200 ">
+                <div class="min-h-screen w-10/12 content-center">
+                    <div class="aboutMe flex mb-12">
+                                <h1 class="text-6xl lg:text-8xl font-bold">Recent Projects:</h1>
+                                <progress class="progress progress-error w-56 grow mt-8" value="1000" max="100"></progress>
+                    </div>
+                    <div class="md:flex md:gap-x-20 justify-center">
+                    
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                            </h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                            </h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                            </h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+            https://www.youtube.com/watch?v=Ft9t5WKFVT8&ab_channel=KeyframeTechSolution
+            
+        </main>
+        <footer></footer>
+        <script>
+            // JavaScript to handle smooth scrolling when button is clicked
+            document
+                .getElementById('scrollButton')
+                .addEventListener('click', function () {
+                    document.getElementById('targetSection').scrollIntoView({
+                        behavior: 'smooth', // Smooth scroll effect
+                    });
+                });
+            let next = document.querySelector('.next');
+            let prev = document.querySelector('.prev');
+
+            next.addEventListener('click', function () {
+                let items = document.querySelectorAll('.item');
+                document.querySelector('.slide').appendChild(items[0]);
+            });
+
+            prev.addEventListener('click', function () {
+                let items = document.querySelectorAll('.item');
+                document.querySelector('.slide').prepend(items[items.length - 1]); // here the length of items = 6
+            });
+        </script>
+        
+    </body>
+</html>

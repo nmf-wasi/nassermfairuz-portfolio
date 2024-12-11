@@ -1,0 +1,55 @@
+.custom_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #1E1E1E; Main background (dark) */
+    border: 2px solid #6ee7b7; /* Border color (green) */
+    border-radius: 50px; /* Rounded edges */
+    padding: 10px 30px; /* Internal padding */
+    color: #ffffff; /* Font color (light beige) */
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer;
+    overflow: hidden; /* Ensure smooth transitions for rounded corners */
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.custom_btn:hover {
+    background-color: #6ee7b7; /* Change to green on hover */
+    color: #1E1E1E; /* Change text color to dark */
+    transform: scale(1.05); /* Slightly enlarge */
+    color: #ffffff;
+}
+.custom_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 70%; /* Start halfway */
+    background-color: #6ee7b7; /* Green background for the right side */
+    border-radius: 50px; /* Match button's rounded edges */
+    transition: all 0.3s ease;
+    z-index: -1; /* Behind text and arrow */
+}
+
+.custom_btn:hover::before {
+    left: 0; /* Expand to full width on hover */
+}
+
+.name{
+    font-family: Caveat;
+    margin-left: 6vw;
+}
+.hi{
+    font-family: Allura;
+    text-align: left;
+}
+.redpart{
+    width: 367px;
+    height: 535px;
+    z-index: -1;
+    background-color: #6ee7b7;
+}
+
+
